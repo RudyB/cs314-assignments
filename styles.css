@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.eot');
+    src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Bold.woff2') format('woff2'),
+        url('fonts/Roboto-Bold.woff') format('woff'),
+        url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Thin.eot');
+    src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Thin.woff2') format('woff2'),
+        url('fonts/Roboto-Thin.woff') format('woff'),
+        url('fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+body, html {
+    height: 100vh;
+    margin: 0;
+    border: none;
+}
+nav {
+    text-align: right;
+}
+nav, a {
+    padding: 10px 10px;
+}
+h1 {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 2em; 
+    margin: .67em 0;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 1.5em; 
+    margin: .75em 0;
+    text-transform: uppercase;
+}
+p {
+    margin:0;
+}
+p + p {
+    margin-top:10px;
+}
+section {
+    padding: 5px 20px;
+    text-align: center;
+    background-color:#E6FFFF;
+}
+.darkBackground {
+    background-color: #19344C;
+    position: relative;
+    height: 177px;
+    width: 100%;
+}
+.noBackground {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
+    padding: 40px 0px;
+}
+.image-container {
+    border: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 100px;
+    
+}
+.image-container img {
+    display: block;
+}
+button {
+    position: relative;
+    width: 52px;
+    height: 30px;
+    top:50%; 
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+}
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 0.7em;
+}
