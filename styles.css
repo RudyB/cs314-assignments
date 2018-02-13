@@ -63,6 +63,9 @@ p + p {
     margin-top:10px;
 }
 
+li {
+    margin-bottom: 20px;
+}
 /* Fullscreen page */
 .fullscreen {
     height: 100vh;
@@ -93,8 +96,19 @@ p + p {
     margin: .67em 0;
     text-transform: capitalize;
 }
-
-.main-nav:hover > .infoBlock {
+.learnMore {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    margin: 10px;
+    text-align: center;
+}
+.learnMore h3 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif; 
+}
+.specialHover:hover > .infoBlock {
     -webkit-animation: increaseOpacity 1s 1; /* Safari 4+ */
     -moz-animation:    increaseOpacity 1s 1; /* Fx 5+ */
     -o-animation:      increaseOpacity 1s 1; /* Opera 12+ */
@@ -113,6 +127,10 @@ p + p {
     background: rgba(255,255,255,0.8);
     border-radius: 15px;
     opacity: 0;
+}
+
+.infoBlock ul {
+    margin: 10px 40px;
 }
 
   
