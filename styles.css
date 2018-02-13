@@ -62,28 +62,123 @@ p {
 p + p {
     margin-top:10px;
 }
+
+/* Fullscreen page */
+.fullscreen {
+    height: 100vh;
+    position: relative;
+    background: url("images/sea.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-nav {
+    background: transparent;
+    min-height: 40px;
+    padding: 40px;
+    display: inline-block;
+    vertical-align: baseline;
+    padding-bottom: 10px;
+    overflow: auto;
+  }
+.main-nav h2{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    width: 35%;
+    color: white;
+    top: 5px;
+    text-align: left;
+    font-size: 40px; 
+    line-height: 50px;
+    margin: .67em 0;
+    text-transform: capitalize;
+}
+
+.main-nav:hover > .infoBlock {
+    -webkit-animation: increaseOpacity 1s 1; /* Safari 4+ */
+    -moz-animation:    increaseOpacity 1s 1; /* Fx 5+ */
+    -o-animation:      increaseOpacity 1s 1; /* Opera 12+ */
+    animation:         increaseOpacity 1s 1; /* IE 10+, Fx 29+ */
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+    -moz-animation-fill-mode:forwards; /*FF 5+*/
+    -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+.infoBlock {
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    margin: 60px 60px;
+    width: 35%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    opacity: 0;
+}
+
+  
+@-webkit-keyframes increaseOpacity {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes increaseOpacity {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes increaseOpacity {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes increaseOpacity {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+header .subheader {
+    font-family: 'Roboto';
+    color: white;
+    position: absolute;
+    top: 240px;
+    left: 30px;
+
+}
+
 section {
     padding: 5px 20px;
     text-align: center;
-    background-color:#E6FFFF;
 }
 .darkBackground {
     background-color: #19344C;
+    height: 200px;
     position: relative;
-    height: 177px;
+    width: 100%;
 }
+.gradientBackground {
+    background: linear-gradient(45deg, #1e5799 0%,#207cca 23%,#7db9e8 91%);
+}
+
 .noBackground {
     display: inline-block;
-    position: relative;
     background-color: transparent;
     vertical-align: middle;
     width: 100%;
     margin: auto;
     padding: 40px 0px;
 }
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: center;
+    margin: 0px 200px;
+}
+
+.gallery img {
+    margin: 10px;
+}
+
 .image-container {
     border: none;
-    position: relative;
     display: inline-block;
     vertical-align: middle;
     padding: 0px 100px;
@@ -92,17 +187,33 @@ section {
 .image-container img {
     display: block;
 }
-button {
-    position: relative;
-    width: 52px;
-    height: 30px;
-    top:50%; 
+
+input {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding: 0;
+    margin: auto;
     background-color: transparent;
     border: 1px solid white;
     color: white;
     border-radius: 4px;
 }
+
+input:hover {
+    background-color: #207cca;
+    border: 1px solid white;
+    color: white;
+
+}
+
+input:active {
+    background-color: purple;
+}
+
 footer {
+    background: transparent;
     background-color: black;
     color: white;
     text-align: left;
