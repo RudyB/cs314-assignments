@@ -1,177 +1,177 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.eot');
-    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Regular.woff2') format('woff2'),
-        url('fonts/Roboto-Regular.woff') format('woff'),
-        url('fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.eot');
+  src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Regular.woff2') format('woff2'),
+  url('fonts/Roboto-Regular.woff') format('woff'),
+  url('fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Bold.eot');
-    src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Bold.woff2') format('woff2'),
-        url('fonts/Roboto-Bold.woff') format('woff'),
-        url('fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Bold.eot');
+  src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Bold.woff2') format('woff2'),
+  url('fonts/Roboto-Bold.woff') format('woff'),
+  url('fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Thin.eot');
-    src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Thin.woff2') format('woff2'),
-        url('fonts/Roboto-Thin.woff') format('woff'),
-        url('fonts/Roboto-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Thin.eot');
+  src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Thin.woff2') format('woff2'),
+  url('fonts/Roboto-Thin.woff') format('woff'),
+  url('fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 
 body, html {
-    height: 100%;
-    margin: 0;
-    border: none;
+  height: 100%;
+  margin: 0;
+  border: none;
 }
 
 h1 {
-    font-family: 'Roboto';
-    text-align: center;
-    font-size: 2em;
-    margin: .67em 0;
-    text-transform: uppercase;
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 2em;
+  margin: .67em 0;
+  text-transform: uppercase;
 }
+
 h2 {
-    font-family: 'Roboto';
-    text-align: center;
-    font-size: 1.5em;
-    margin: .75em 0;
-    text-transform: uppercase;
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 1.5em;
+  margin: .75em 0;
+  text-transform: uppercase;
 }
+
 p {
-    margin:0;
+  margin:0;
 }
 p + p {
-    margin-top:10px;
+  margin-top:10px;
 }
 
 li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 .main-nav {
   display: flex;
-    background-color: black;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    overflow: auto;
-  }
+  background-color: black;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+  overflow: auto;
+}
 
-  .main-nav a {
-    color: white;
-    font-family: 'Roboto';
-    text-decoration: none;
-  }
+.main-nav a {
+  color: white;
+  font-family: 'Roboto';
+  text-decoration: none;
+  margin:10px;
+}
 
-  .nav-items {
-    padding-left: 60px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
+.nav-items {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-  .main-nav a {
-    margin:10px;
-  }
-  .pawImage {
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+.pawImage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
- 
+
 
 .topSection {
-    background-color: #D6D6D6;
-    padding: 50px 80px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  background-color: #D6D6D6;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .topSection h2 {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .topSection p {
-    color: white;
-    font-family: 'Roboto';
-    text-align: center;
+  color: white;
+  font-family: 'Roboto';
+  text-align: center;
 }
 
+
 .bottomSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    margin: 20px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 60px;
+}
+
+
+.container {
+  margin: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .container p {
-    text-align: center;
-    margin: 26px auto 0;
-}
-
-.container {
-    margin: 10px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  text-align: center;
+  margin: 26px auto 0;
 }
 
 .container svg {
-    margin: auto auto 0;
+  margin: auto auto 0;
 }
 
 button {
-    padding: 13px 50px;
-    background-color: transparent;
-    border: 2px solid black;
-    color: black;
-    background-color: white;
-    border-radius: 4px;
-    margin: 30px auto 0;
+  padding: 13px 50px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  background-color: #E7E7E7;
+  border-radius: 4px;
+  margin: 30px auto 0;
+  font-size: 0.8em;
 }
 
 button:hover {
-    background-color: #207cca;
-    border: 1px solid white;
-    color: white;
-
+  background-color: gray;
 }
 
-button:active {
-    background-color: purple;
-}
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 767px) {
+  .main-nav {
+    padding: 20px;
+  }
+  .nav-items {
+    padding-left: 20px;
+  }
+  .container {
+    padding-bottom: 60px;
+  }
 
-    .nav-items {
-        padding-left: 20px;
-    }
-
-    .bottomSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        margin: 20px 60px;
-    }
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 60px;
+  }
 }
