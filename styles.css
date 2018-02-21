@@ -32,7 +32,7 @@
 }
 
 body, html {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     border: none;
 }
@@ -62,13 +62,10 @@ li {
     margin-bottom: 20px;
 }
 
-
-
 nav ul li {
   list-style:none;
   margin:10px;
 }
-
 
 .main-nav {
   display: flex;
@@ -77,6 +74,12 @@ nav ul li {
     padding: 20px;
     align-items: center;
     overflow: auto;
+  }
+
+  .main-nav a {
+    color: white;
+    font-family: 'Roboto';
+    text-decoration: none;
   }
 
   .nav-items {
@@ -90,74 +93,93 @@ nav ul li {
     display: inline-flex;
     align-items: center;
     justify-content: flex-end;
+    margin: 0px auto 0;
   }
 
 
-.main-nav a {
-  color: white;
-  font-family: 'Roboto';
-  text-decoration: none;
+
+
+.topSection {
+    background-color: #D6D6D6;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
-.main-nav h2{
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    width: 35%;
-    color: white;
-    top: 5px;
-    text-align: left;
-    font-size: 40px;
-    line-height: 50px;
-    margin: .67em 0;
+.topSection h2 {
     text-transform: capitalize;
 }
 
-
-section {
-    padding: 5px 20px;
+.topSection p {
+    color: white;
+    font-family: 'Roboto';
     text-align: center;
 }
 
-.noBackground {
-    display: inline-block;
-    background-color: transparent;
-    vertical-align: middle;
-    width: 100%;
-    margin: auto;
-    padding: 40px 0px;
-}
-
-.gallery {
+.bottomSection {
     display: flex;
-    flex-flow: row wrap;
-    align-content: space-around;
+    flex-direction: row;
     justify-content: center;
-    margin: 0px 200px;
+    align-content: center;
+    margin: 20px 60px;
 }
 
-.gallery img {
+.container p {
+    text-align: center;
+    margin: 26px auto 0;
+}
+
+.container {
     margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-.image-container {
-    border: none;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0px 100px;
-
-}
-.image-container img {
-    display: block;
+.container svg {
+    margin: auto auto 0;
 }
 
+button {
+    padding: 13px 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    margin: 30px auto 0;
+}
 
-footer {
-    background: transparent;
-    background-color: black;
+button:hover {
+    background-color: #207cca;
+    border: 1px solid white;
     color: white;
-    text-align: left;
-    padding: 10px;
-    text-transform: uppercase;
-    font-family: 'Roboto';
-    font-size: 0.7em;
+
+}
+
+button:active {
+    background-color: purple;
+}
+
+@media screen and (max-width: 767px) {
+
+    .nav-items {
+        padding-left: 20px;
+    }
+
+    .pawImage {
+        padding-right: 20px;
+        margin: 0px auto 0;
+      }
+
+    .bottomSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 20px 60px;
+    }
 }
