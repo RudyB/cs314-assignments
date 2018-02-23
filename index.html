@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>Assignment 5 - Forms</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <header>
-      <h1>Hi There!</h1>
-      <h3>Tell me a little about yourself.</h3>
+        <h1>Hi There!</h1>
+        <h3>Tell me a little about yourself.</h3>
     </header>
 
     <main>
         <form>
-          <div class="question">
-              <p>First name</p>
-              <input type="text" name="firstname" placeholder="Enter your first name">
-          </div>
-
-          <div class="question">
-              <p>Last name</p>
-              <input type="text" name="lastname" placeholder="Enter your last name">
-          </div>
-          
-          <div class="question">
-              <p>Email</p>
-              <input type="text" name="email" placeholder="Enter your email address">
-          </div>
-
-          <div class="radioButtons">
-              <p>Dog Person</p> <input type="radio" name="person-type" value="DogPerson"> 
-              <p>Cat Person</p> <input type="radio" name="person-type" value="CatPerson"> 
-              <p>No Animals</p> <input type="radio" name="person-type" value="NoAnimals"> 
+            <div class="question">
+                <p>First name</p>
+                <input type="text" name="firstname" placeholder="Enter your first name">
             </div>
 
-          <div class="question">
-          <p>About You:</p>
-          <input type="text" name="AboutYou" placeholder="Tell me something unique about yourself!"><br>
-          </div>
+            <div class="question">
+                <p>Last name</p>
+                <input type="text" name="lastname" placeholder="Enter your last name">
+            </div>
 
-          <div class="question">
-              <p>Favorite Season:</p>
-              <select name="season">
+            <div class="question">
+                <p>Email</p>
+                <input type="text" name="email" placeholder="Enter your email address">
+            </div>
+
+            <div class="radioButtons">
+                <div class="radioItem">
+                    <p>Dog Person</p> <input type="radio" name="person-type" value="DogPerson">
+                </div>
+                <div class="radioItem">
+                    <p>Cat Person</p> <input type="radio" name="person-type" value="CatPerson">
+                </div>
+                <div class="radioItem">
+                    <p>No Animals</p> <input type="radio" name="person-type" value="NoAnimals">
+                </div>
+            </div>
+
+            <div class="question">
+                <p>About You:</p>
+                <textarea cols="80" rows="10" id="textbox" type="text" name="aboutYou" placeholder="Tell me something unique about yourself!"></textarea>
+            </div>
+
+            <div class="question">
+                <p>Favorite Season:</p>
+                <select name="season">
                 <option value="spring">Spring</option>
                 <option value="summer">Summer</option>
                 <option value="autumn">Autumn</option>
                 <option value="fall">Fall</option>
               </select>
-          </div
-
-          <input type="submit" value="Submit">
+            </div <input type="submit" value="Submit">
         </form>
     </main>
 
-  </body>
+</body>
+
 </html>
