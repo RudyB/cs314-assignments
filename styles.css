@@ -99,6 +99,11 @@ form {
     padding-bottom: 5px;
 }
 
+.question select {
+    border: 3px solid #7B92B5;
+    width: 100%;
+}
+
 .radioButtons {
     display: flex;
     flex-direction: row;
@@ -120,7 +125,8 @@ form {
 input {
     font-family: 'Roboto';
     font-size: 1.3em;
-    width: 100%;
+    
+    border: 3px solid #7B92B5;
 }
 
 input[type=radio] {
@@ -128,7 +134,7 @@ input[type=radio] {
 }
 
 input[type=text] {
-    border: 5px solid #7B92B5;
+    width: 100%;
     margin: 2px 0;
     border-radius: 5px;
     font-weight: 300;
@@ -137,6 +143,7 @@ input[type=text] {
 textarea {
     resize: none;
     width: 100%;
+    border: 3px solid #7B92B5;
 }
 
 textarea::-webkit-input-placeholder {
@@ -155,12 +162,16 @@ input[type=text]::-webkit-input-placeholder {
 input[type=submit] {
     padding: 13px 50px;
     background-color: transparent;
-    border: 2px solid black;
+    border: 3px solid #7B92B5;
     color: black;
-    background-color: #E7E7E7;
     border-radius: 4px;
     margin: 30px auto 0;
     font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
 }
 
 button:hover {
@@ -171,6 +182,9 @@ button:hover {
     h1 {
         font-size: 3em;
     }
+    input[type=radio] {
+        vertical-align: right;
+    }
     form {
         margin: 20px 100px 0;
     }
@@ -180,5 +194,13 @@ button:hover {
     }
     .radioItem {
         padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    form {
+        margin: 20px 50px 0;
     }
 }
