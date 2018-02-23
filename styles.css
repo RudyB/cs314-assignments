@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.eot');
+  src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Regular.woff2') format('woff2'),
+  url('fonts/Roboto-Regular.woff') format('woff'),
+  url('fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Bold.eot');
+  src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Bold.woff2') format('woff2'),
+  url('fonts/Roboto-Bold.woff') format('woff'),
+  url('fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Thin.eot');
+  src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Thin.woff2') format('woff2'),
+  url('fonts/Roboto-Thin.woff') format('woff'),
+  url('fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  border: none;
+}
+
+h1 {
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 6em;
+  margin-top: .67em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 1.5em;
+  margin: .75em 0;
+  text-transform: uppercase;
+}
+
+h3 { 
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p {
+  margin:0;
+}
+p + p {
+  margin-top:10px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+header {
+  background-color: #EE8081;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  margin: 20px 200px;
+}
+
+.question {
+  padding: 10px 0;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+input {
+  font-family: 'Roboto';
+  font-size: 1.3em;
+  width: 100%;
+}
+input[type=radio] {
+ margin: 5px 0px;
+}
+
+input[type=text] {
+  border: 5px solid #7B92B5;
+  margin: 2px 0;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #EE8081;
+  font-size: 0.8em;
+}
+
+input[type=submit] {
+  padding: 13px 50px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  background-color: #E7E7E7;
+  border-radius: 4px;
+  margin: 30px auto 0;
+  font-size: 0.8em;
+}
+
+
+button:hover {
+  background-color: gray;
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+}
