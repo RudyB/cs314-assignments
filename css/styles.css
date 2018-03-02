@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.eot");
+  src: url("fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.woff") format("woff"),
+    url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.eot");
+  src: url("fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Roboto-Bold.woff2") format("woff2"),
+    url("fonts/Roboto-Bold.woff") format("woff"),
+    url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Thin.eot");
+  src: url("fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Roboto-Thin.woff2") format("woff2"),
+    url("fonts/Roboto-Thin.woff") format("woff"),
+    url("fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  border: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0.75em 0;
+}
+
+h3 {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.main-nav {
+  background-color: black;
+  min-height: 40px;
+  padding: 40px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Logo Styling */
+.logo {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px;
+}
+.logo-name {
+  height: 40px;
+  margin-left: 8px;
+  line-height: 1.4;
+  color: white;
+}
+.logo .logo-name h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+  display: inline;
+}
+.logo .logo-name h2 {
+  font-size: 0.875em;
+  display: block;
+  text-align: left;
+  margin-top: 0px;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #0499ff;
+}
+a:hover {
+  color: #6633ff;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-right: 0px;
+  padding: 0;
+}
+
+.nav-list .name {
+  display: none;
+}
+
+.nav-list li {
+  margin: 0px 10px;
+}
+
+.nav-list a {
+  color: white;
+  transition: all 0.5s;
+}
+.nav-list a:hover {
+  border-bottom: 2px solid #0499ff;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.name a:hover {
+  color: white;
+  border-bottom: none;
+}
+
+.activePage {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+/* About Section Styling */
+
+.section-break h1 {
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-header {
+  background: url("../images/code.jpg") no-repeat center;
+  padding: 20px;
+  margin: 50px 100px 75px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-image {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all 0.5s;
+}
+.profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+.name a:hover {
+  color: white;
+  border-bottom: none;
+}
+
+.location {
+  background-color: #222;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 50px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.card p {
+    text-align: center;
+    color: black;
+}
+.card h2 {
+  text-align: center;
+  color: black
+}
+.card img {
+    display:block;
+    margin:auto;
+}
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+}
+.images img {
+    margin: 0px;
+}
+.card:hover {
+  border-color: #ff99ff;
+}
+
+input[type=button] {
+    padding: 13px 50px;
+    background-color: transparent;
+    border: 3px solid #7B92B5;
+    color: black;
+    border-radius: 4px;
+    margin: 30px auto 0;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+input[type=button]:hover {
+  background-color: gray;
+}
+
+/* Footer Link Styling */
+a.social {
+  color: white;
+  opacity: 0.6;
+  transition: all 0.25s;
+  margin: 0px 10px;
+}
+
+a.twitter:hover {
+  color: #1da1f3;
+}
+a.instagram:hover {
+  color: #cc2799;
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  background-color: black;
+  padding: 20px 40px;
+  margin: 0px;
+}
+
+footer .copyright {
+  font-size: 0.65em;
+  color: grey;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* Make it so that the name in my logo disappears */
+@media screen and (max-width: 600px) {
+}
