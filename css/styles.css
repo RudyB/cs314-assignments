@@ -231,21 +231,25 @@ a:hover {
   margin: 0 50px;
 }
 
-.card {
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   width: 300px;
   height: 300px;
-  margin: 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.card p {
+.project-card p {
     text-align: center;
     color: black;
 }
-.card h2 {
+.project-card h2 {
   text-align: center;
   color: black
 }
-.card img {
+.project-card img {
     display:block;
     margin:auto;
 }
@@ -259,8 +263,8 @@ a:hover {
 .images img {
     margin: 0px;
 }
-.card:hover {
-  border-color: #ff99ff;
+.project-card:hover {
+background-color: #ff99ff;
 }
 
 input[type=button] {
