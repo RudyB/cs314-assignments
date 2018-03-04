@@ -43,7 +43,7 @@
                 <li><a href="index.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="documents/resume.pdf" target="_blank">Resume</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="https://medium.com/@RudyB" target="_blank">Blog</a></li>
                 <li><a class="activePage" href="contact.html">Contact</a></li>
             </ul>
         </section>
@@ -52,7 +52,34 @@
 
     <!-- Your contact page must have a form with at least 3 inputs and a button. -->
     <main>
-        <h1>Lets Keep in Touch</h1>
+
+
+        <section class="contact-form">
+            <h1>Lets Keep in Touch</h1>
+            <form>
+                <div class="form-item">
+                    <p>First name</p>
+                    <input type="text" name="firstname" placeholder="Enter your first name">
+                </div>
+
+                <div class="form-item">
+                    <p>Last name</p>
+                    <input type="text" name="lastname" placeholder="Enter your last name">
+                </div>
+
+                <div class="form-item">
+                    <p>Email</p>
+                    <input type="text" name="email" placeholder="Enter your email address">
+                </div>
+
+                <div class="form-item">
+                    <p>Message:</p>
+                    <textarea cols="80" rows="10" id="textbox" type="text" name="aboutYou" placeholder="Hey There!"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
     </main>
 
     <footer>

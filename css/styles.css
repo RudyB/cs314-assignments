@@ -340,6 +340,85 @@ input[type=button]:hover {
 }
 
 
+/* Contact Page */
+
+.contact-form {
+    margin: 0px auto;
+    max-width: 745px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h1 {
+    text-align: center;
+}
+
+form input[type=submit] {
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.form-item {
+    padding: 10px 0;
+}
+
+.form-item p {
+    padding-bottom: 5px;
+}
+
+input {
+    font-family: 'Lato';
+    font-size: 1.3em;
+    border: 3px solid #7B92B5;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 2px 0;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    border: 3px solid #7B92B5;
+}
+
+textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: slategray;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+input[type=text]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: slategray;
+    font-size: 0.8em;
+}
+
+input[type=submit] {
+    padding: 13px 50px;
+    background-color: transparent;
+    border: 3px solid #7B92B5;
+    color: black;
+    border-radius: 4px;
+    margin: 30px auto 0;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+
 /* Footer Link Styling */
 
 a.social {
@@ -365,14 +444,24 @@ a.social:hover {
 
 /* Footer Styling */
 
+
+/* Sticky Footer */
+
+main {
+    min-height: 80%;
+    overflow: auto;
+    /* must be same height as the footer */
+}
+
 footer {
+    position: relative;
+    /* negative value of footer height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
     padding: 30px 40px;
-    margin: 0px;
 }
 
 footer .copyright {
@@ -396,6 +485,9 @@ footer ul {
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
+    }
+    .contact-form {
+        margin: 0px 100px;
     }
 }
 
@@ -421,8 +513,11 @@ footer ul {
     }
 }
 
-
-/* Make the project-container images only 1 wide */
+@media screen and (max-width: 475px) {
+    .contact-form {
+        margin: 0px 50px;
+    }
+}
 
 @media screen and (max-width: 405px) {
     .main-nav {
