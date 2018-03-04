@@ -448,19 +448,16 @@ a.social:hover {
 /* Sticky Footer */
 
 main {
-    min-height: 80%;
-    overflow: auto;
-    /* must be same height as the footer */
+    min-height: calc(100vh - 130px);
 }
 
 footer {
-    position: relative;
-    /* negative value of footer height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
+    height: 70px;
     padding: 30px 40px;
 }
 
@@ -479,6 +476,11 @@ footer ul {
     align-items: center;
 }
 
+@media screen and (max-width: 1040px) {
+.flex {
+  margin: 0px 90px;
+}
+}
 @media screen and (max-width: 768px) {
     .flex {
         display: flex;
