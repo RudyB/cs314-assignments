@@ -623,4 +623,7 @@ footer ul {
     .project-container div {
         width: 290px;
     }
+    .card {
+        width: 275px;
+    }
 }
