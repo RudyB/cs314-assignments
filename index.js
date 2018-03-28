@@ -43,10 +43,20 @@ function promptUserNumber() {
 let myObj = {
     firstName: "Rudy",
     lastName: "Bermudez",
+    age: 22,
     fullName: function() {
         return this.firstName + " " + this.lastName;
     }
 };
+
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.fullName = function() {return this.firstName + " " + this.lastName;};
+}
+
+let newObject = new Person("John", "Doe");
+console.log(newObject.fullName());
 
 // function concat(string1, string2, string3 = "") {
 //     return string1 + " " + string2 + " " + string3
@@ -56,7 +66,7 @@ let myObj = {
 //     return string1 + " " + string2 + " " + string3
 //  };
 
-let concat = (string1, string2, string3 = "") => string1 + " " + string2 + " " + string3
+let concat = (string1, string2, string3 = "") => string1 + " " + string2 + " " + string3;
 
 
 promptUserConfirm()
