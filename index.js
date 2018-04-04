@@ -22,7 +22,7 @@ function promptUser(message, defaultValue) {
 function charSwap(inputString) {
     if (inputString <= 1) { return; }
 
-    let stringLength =  userString.length;
+    let stringLength =  inputString.length;
 
     let firstChar = inputString.charAt(0);
     let lastChar = inputString.charAt(stringLength - 1);
@@ -91,7 +91,7 @@ function upperOrLower() {
 function intSwap() {
 	let inputString = promptUser("Enter a list of numbers (Comma Separated)","1,6,4,2");
 	let inputArray = inputString.split(",");
-	let arrayLength = userNumberArray.length;
+	let arrayLength = inputArray.length;
 	
 	// Check for at least 2 elements
 	if (arrayLength <= 1) {
@@ -152,11 +152,11 @@ function largestEvenNumber() {
 		}
 	}
 	
-	numberArray = inputArray.sort((a, b) => b - a);
+	let numberArray = inputArray.sort((a, b) => b - a);
 	
 	for (let i = 0; i < arrayLength; i++) {
 		if (inputArray[i]%2 == 0) {
-				return finalArray[i];
+				return numberArray[i];
 		}
 	}
 	return "No Even Numbers Exist in List";
