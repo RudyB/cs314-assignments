@@ -11,33 +11,33 @@
     <section id="selection">
       <div class="inner-content">
         <p>Select the number that you want to scroll to:</p>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <button onclick="scrollTo1()">1</button>
+        <button onclick="scrollTo2()">2</button>
+        <button onclick="scrollTo3()">3</button>
+        <button onclick="scrollTo4()">4</button>
+        <button onclick="scrollTo5()">5</button>
       </div>
     </section>
     <section class="dark-bg" id="one">
       <div class="inner-content">
         <p>1. Pick a background color:</p>
-        <button>Blue</button>
-        <button>Green</button>
+        <button onclick="setBackgroundBlue()">Blue</button>
+        <button onclick="setBackgroundGreen()">Green</button>
       </div>
     </section>
-    <section id="two">
+    <section id="two" property="">
       <div class="inner-content">
         <p>2. Click the button to change between a pink and orange background:</p>
         <p>The text on the button will represent the color the user will get.</p>
-        <button>Click for pink!</button>
+        <button id="backgroundToggleButton" onclick="toggleBackgroundPinkOrange()">Click for pink!</button>
       </div>
     </section>
     <section class="dark-bg" id="three">
       <div class="inner-content">
         <p>3. Input text to add to the list below</p>
-        <input type="text">
-        <button>Submit</button>
-        <ul>
+        <input id="userInputField" type="text">
+        <button id="appendItemButton" onclick="appendToList()">Submit</button>
+        <ul id="list">
           <li>One</li>
           <li>Green</li>
         </ul>
@@ -47,10 +47,10 @@
       <div class="inner-content">
         <p>4. If an item is clicked, remove it from the list.</p>
         <ul>
-          <li>Bob</li>
-          <li>Tim</li>
-          <li>Jack</li>
-          <li>Sam</li>          
+          <li onclick="removeListElement(this)">Bob</li>
+          <li onclick="removeListElement(this)">Tim</li>
+          <li onclick="removeListElement(this)">Jack</li>
+          <li onclick="removeListElement(this)">Sam</li>
         </ul>
       </div>
     </section>
@@ -60,12 +60,13 @@
         <p>This doesn't have to be pretty.</p>
         <p>Just change the background color of the selected item with a class.</p>
         <ul>
-          <li>Bob</li>
-          <li>Tim</li>
-          <li>Jack</li>
-          <li>Sam</li>          
+          <li id="item1" onclick="highlight(this)">Bob</li>
+          <li id="item2" onclick="highlight(this)">Tim</li>
+          <li id="item3" onclick="highlight(this)">Jack</li>
+          <li id="item4" onclick="highlight(this)">Sam</li>
         </ul>
       </div>
     </section>
+  <script src="index.js"></script>
   </body>
 </html>
