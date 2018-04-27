@@ -4,8 +4,6 @@
 $(document).ready(function(){
     // Code won't execute until the document is loaded
     loadUsers();
-    todosFor(1);
-    albumsFor(1);
 });
 
 /*
@@ -15,15 +13,16 @@ function loadUsers() {
     $.getJSON( "https://jsonplaceholder.typicode.com/users")
         .done(function( data ) {
             var table = $(document.getElementsByClassName("userTable"));
-            console.log(table);
             $.each( data, function( i, item ) {
-                console.log(item["id"], item["name"], item["email"], item["company"]["name"]);
                 let row = $('<tr>').addClass('row');
                 let todosBtn = $('<button>').addClass("todoButton").text("View Todos");
+                todosBtn.click(toggleTodos);
                 let albumsBtn = $('<button>').addClass("albumButton").text("View Albums");
+                albumsBtn.click(toggleAlbums);
                 row.append($("<td>").text(item["name"]));
                 row.append($("<td>").text(item["email"]));
                 row.append($("<td>").text(item["company"]["name"]));
+                row.attr("id", item["id"]);
                 row.append(todosBtn);
                 row.append(albumsBtn);
                 table.append(row)
@@ -31,6 +30,19 @@ function loadUsers() {
     });
 }
 
+
+function toggleTodos(event) {
+    let clickedElement = event.target;
+
+    console.log($(clickedElement).parent().attr("id"));
+
+}
+
+function toggleAlbums(event) {
+    let clickedElement = event.target;
+
+    console.log($(clickedElement).parent().attr("id"));
+}
 
 function todosFor(userID) {
     userID = userID.toString();
