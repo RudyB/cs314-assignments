@@ -63,6 +63,9 @@ form {
     margin: 20px 200px;
 }
 
+.row {
+    text-align: center;
+}
 .question {
     padding: 10px 0;
 }
