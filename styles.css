@@ -55,126 +55,29 @@ main {
     justify-content: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
-    margin: 20px 200px;
+table {
+    margin: 20px 20px 50px;
+}
+.detailTable {
+    align-self: center;
+    text-align: left;
 }
 
-.row {
+th {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+table .row {
     text-align: center;
 }
-.question {
-    padding: 10px 0;
+.detailTable .row {
+    text-align: left;
 }
-
-.question p {
-    padding-bottom: 5px;
+.completed {
+    text-align: center;
+    margin-left: 10px;
 }
-
-.question select {
-    border: 3px solid #7B92B5;
-    width: 100%;
-}
-
-.radioButtons {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
-    padding: 10px 0px;
-}
-
-.radioItem {
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.radioItem p {
-    white-space: nowrap;
-}
-
-input {
-    font-size: 1.3em;
-    
-    border: 3px solid #7B92B5;
-}
-
-input[type=radio] {
-    margin: 0px 7px;
-}
-
-input[type=text] {
-    width: 100%;
-    margin: 2px 0;
-    border-radius: 5px;
-    font-weight: 300;
-}
-
-textarea {
-    resize: none;
-    width: 100%;
-    border: 3px solid #7B92B5;
-}
-
-textarea::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #EE8081;
-    font-size: 1.3em;
-    font-weight: 300;
-}
-
-input[type=text]::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #EE8081;
-    font-size: 0.8em;
-}
-
-input[type=submit] {
-    padding: 13px 50px;
-    background-color: transparent;
-    border: 3px solid #7B92B5;
-    color: black;
-    border-radius: 4px;
-    margin: 30px auto 0;
-    font-size: 0.8em;
-    margin-bottom: 30px;
-}
-
-input[type=submit]:hover {
-    background-color: lightblue;
-}
-
-button:hover {
-    background-color: gray;
-}
-
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 3em;
-    }
-    input[type=radio] {
-        vertical-align: right;
-    }
-    form {
-        margin: 20px 100px 0;
-    }
-    .radioButtons {
-        flex-direction: column;
-        margin: 10px auto;
-    }
-    .radioItem {
-        padding: 10px 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    form {
-        margin: 20px 50px 0;
-    }
+svg {
+    padding-left: 40%;
 }
