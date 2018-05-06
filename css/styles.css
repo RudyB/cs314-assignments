@@ -51,6 +51,11 @@ b {
     font-weight: bold;
 }
 
+.fullscreen-img {
+
+    height: auto;
+    width: 100%;
+}
 .main-nav {
     background-color: black;
     min-height: 40px;
@@ -59,6 +64,11 @@ b {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.main-nav a h1 {
+    margin-bottom: 0px;
+    color: white;
 }
 
 
