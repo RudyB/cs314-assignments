@@ -315,7 +315,7 @@ a:hover {
     border-color: #ff99ff;
 }
 
-input[type=button] {
+button {
     padding: 13px 50px;
     background-color: transparent;
     border: 3px solid #7B92B5;

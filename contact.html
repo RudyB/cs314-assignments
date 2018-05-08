@@ -41,30 +41,25 @@
             <form>
                 <div class="form-item">
                     <p>First name</p>
-                    <input type="text" name="firstname" placeholder="Enter your first name">
-                </div>
-
-                <div class="form-item">
-                    <p>Last name</p>
-                    <input type="text" name="lastname" placeholder="Enter your last name">
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
                 </div>
 
                 <div class="form-item">
                     <p>Email</p>
-                    <input type="text" name="email" placeholder="Enter your email address">
+                    <input type="text" id="email" name="email" placeholder="Enter your email address">
                 </div>
 
                 <div class="form-item">
                     <p>Message:</p>
-                    <textarea cols="80" rows="10" id="textbox" type="text" name="aboutYou" placeholder="What bar should we review next?"></textarea>
+                    <textarea cols="80" rows="10" id="userInputtedForm" type="text" name="userInputtedForm" placeholder="What bar should we review next?"></textarea>
                 </div>
 
-                <input type="submit" value="Submit">
+                <button type="button" onclick="formHandler()">Submit</button>
             </form>
         </section>
     </main>
 
-
+        <script src="index.js"></script>
 </body>
 
 </html>
